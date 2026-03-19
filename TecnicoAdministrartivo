@@ -1,0 +1,15 @@
+package ProjetoIF;
+
+class TecnicoAdministrativo extends Funcionario {
+    String cargo;
+
+    public TecnicoAdministrativo(String nome, int idade, String setor, String cargo) {
+        super(nome, idade, setor);
+        this.cargo = cargo;
+    }
+
+    public void exibirDados() {
+        System.out.println("Tecnico Administrativo: " + nome);
+        System.out.println("Cargo: " + cargo);
+    }
+}
