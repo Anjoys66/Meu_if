@@ -1,0 +1,37 @@
+package ProjetoIF;
+
+import java.util.ArrayList;
+
+public class Diario {
+    Professor professor;
+    ArrayList<Estudante> estudantes = new ArrayList<>();
+    ArrayList<Aula> aulas = new ArrayList<>();
+
+    public Diario(Professor professor) {
+        this.professor = professor;
+    }
+
+    public void adicionarEstudante(Estudante e) {
+        estudantes.add(e);
+    }
+
+    public void adicionarAula(Aula a) {
+        aulas.add(a);
+    }
+
+    public void exibirDiario() {
+
+        System.out.println("Professor Responsavel:");
+        professor.exibirDados();
+
+        System.out.println("\nEstudantes:");
+        for (Estudante e : estudantes) {
+            e.exibirDados();
+        }
+
+        System.out.println("\nAulas Ministradas:");
+        for (Aula a : aulas) {
+            a.exibirAula();
+        }
+    }
+}
