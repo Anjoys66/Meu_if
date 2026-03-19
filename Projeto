@@ -1,0 +1,16 @@
+package ProjetoIF;
+
+public class Projeto {
+    String nomeProjeto;
+    String tipo;
+
+    public Projeto(String nomeProjeto, String tipo) {
+        this.nomeProjeto = nomeProjeto;
+        this.tipo = tipo;
+    }
+
+    public void exibirProjeto() {
+        System.out.println("Projeto: " + nomeProjeto);
+        System.out.println("Tipo: " + tipo);
+    }
+}
