@@ -1,0 +1,15 @@
+package ProjetoIF;
+
+public class Funcionario extends Pessoa{
+    String setor;
+
+    public Funcionario(String nome, int idade, String setor) {
+        super(nome, idade);
+        this.setor = setor;
+    }
+
+    public void exibirDados() {
+        System.out.println("Funcionario: " + nome);
+        System.out.println("Setor: " + setor);
+    }
+}
