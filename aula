@@ -1,0 +1,16 @@
+package ProjetoIF;
+
+public class Aula {
+    String data;
+    String conteudo;
+
+    public Aula(String data, String conteudo) {
+        this.data = data;
+        this.conteudo = conteudo;
+    }
+
+    public void exibirAula() {
+        System.out.println("Data: " + data);
+        System.out.println("Conteudo: " + conteudo);
+    }
+}
